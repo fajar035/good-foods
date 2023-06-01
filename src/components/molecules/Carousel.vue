@@ -219,7 +219,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
   .carousel {
     background-size: contain;
     background-repeat: repeat;
