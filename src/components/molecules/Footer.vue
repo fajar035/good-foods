@@ -203,6 +203,10 @@ export default {
     padding: 0;
   }
 
+  .footer__container {
+    padding: 50px 20px;
+  }
+
   .footer__menu {
     width: 100%;
   }
