@@ -3,7 +3,7 @@
   <slot />
   <Footer />
   <p class="text">© 2021 Elemes id. All rights reserved</p>
-  <Navbar v-if="width <= 550" />
+  <Navbar v-if="width <= 1020" />
 </template>
 
 <script>

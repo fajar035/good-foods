@@ -83,6 +83,7 @@ export default {
   width: 100%;
   height: fit-content;
   padding: 40px;
+  /* position: relative; */
 }
 
 .footer__container {

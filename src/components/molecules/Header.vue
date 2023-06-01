@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav :class="`navbar ${scrollY >= 90 ? 'on-scroll' : ''}`">
     <img src="@/assets/images/logo.png" alt="logo" class="navbar__logo" />
     <ul class="navbar__menu">
       <li>Home</li>
@@ -18,19 +18,41 @@
 <script>
 export default {
   name: "HeaderComponent",
+  data: () => ({
+    scrollY: 0,
+  }),
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
+  methods: {
+    onScroll(e) {
+      this.scrollY = e.target.documentElement.scrollTop;
+    },
+  },
 };
 </script>
 
 <style scoped>
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding-left: var(--padding-default);
   padding-right: var(--padding-default);
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.on-scroll {
+  background-color: white;
 }
 
 .navbar__menu {
@@ -93,7 +115,7 @@ export default {
   color: white;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1020px) {
   .navbar {
     padding: 20px;
   }
@@ -111,4 +133,10 @@ export default {
     display: none;
   }
 }
+
+/* @media screen and (max-width: 1020px) {
+  .navbar {
+    display: none;
+  }
+} */
 </style>

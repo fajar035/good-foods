@@ -79,6 +79,11 @@ export default {
   font-weight: 400;
   color: white;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbar__menu_item:hover {
+  color: red;
 }
 
 .navbar__menu_item::after {

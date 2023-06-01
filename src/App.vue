@@ -1,24 +1,18 @@
 <template>
   <Layout>
-    <div class="carousel"></div>
+    <Carousel />
   </Layout>
 </template>
 
 <script>
 import Layout from "@/components/molecules/Layout.vue";
+import Carousel from "./components/molecules/Carousel.vue";
 
 export default {
   name: "AppView",
   components: {
     Layout,
+    Carousel,
   },
 };
 </script>
-
-<style scoped>
-.carousel {
-  width: 100%;
-  /* height: calc(100% - 50px); */
-  height: 1000px;
-}
-</style>
