@@ -26,12 +26,25 @@ export default {
 
 <style scoped>
 .card {
-  width: 287px;
+  width: 250px;
   height: 306px;
   background-color: blue;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   display: block;
   padding: 40px 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: linear-gradient(
+      0deg,
+      rgb(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(@/assets/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card__img {

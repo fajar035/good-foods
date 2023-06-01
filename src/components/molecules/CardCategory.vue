@@ -139,6 +139,7 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .card__img {
