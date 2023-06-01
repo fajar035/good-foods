@@ -162,7 +162,7 @@ export default {
 .card__responsive {
   left: 8rem;
   bottom: -10px;
-  /* width: 270px; */
+  width: 270px;
 }
 
 .carousel__card__thumbnail {

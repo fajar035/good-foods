@@ -82,7 +82,7 @@ export default {
   cursor: pointer;
 }
 
-.navbar__menu_item:hover {
+.navbar__menu_item li:hover {
   color: red;
 }
 
