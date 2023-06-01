@@ -92,17 +92,14 @@ export default {
 .carousel__about {
   width: 50%;
   height: fit-content;
+  padding: 50px;
+  font-family: var(--font-rubik);
 }
 
 .carousel__image {
   width: auto;
   height: auto;
   position: relative;
-}
-
-.carousel__about {
-  padding: 50px;
-  font-family: var(--font-rubik);
 }
 
 .carousel__about h1 {
@@ -208,24 +205,17 @@ export default {
     padding-top: 5rem;
     height: fit-content;
     width: 100%;
+    background-size: contain;
+    background-repeat: repeat;
   }
   .carousel__about,
   .carousel__image {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .carousel__card__detail p {
     margin: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .carousel {
-    background-size: contain;
-    background-repeat: repeat;
-  }
-  .carousel__image {
-    margin-bottom: 50px;
   }
   .carousel__image__banner {
     width: 400px;
@@ -239,6 +229,27 @@ export default {
   .carousel button:nth-child(4) {
     background-color: var(--color-primary);
     color: white;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel__about {
+    padding: 30px;
+  }
+  .carousel__image {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .carousel__image__banner {
+    width: 280px;
+    height: 280px;
+  }
+
+  .card__responsive {
+    left: 5rem;
+    bottom: -30px;
+    width: 250px;
   }
 }
 </style>
