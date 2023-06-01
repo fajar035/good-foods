@@ -199,6 +199,13 @@ export default {
 }
 
 @media screen and (max-width: 550px) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer__menu {
+    width: 100%;
+  }
   .footer__profile {
     width: 100%;
     margin-bottom: 20px;

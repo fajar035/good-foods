@@ -82,7 +82,7 @@ export default {
       rgba(255, 255, 255, 0.9)
     ),
     url(@/assets/images/banner.png);
-  background-size: contain;
+  background-size: fill;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -220,6 +220,10 @@ export default {
 }
 
 @media screen and (max-width: 550px) {
+  .carousel {
+    background-size: contain;
+    background-repeat: repeat;
+  }
   .carousel__image {
     margin-bottom: 50px;
   }
