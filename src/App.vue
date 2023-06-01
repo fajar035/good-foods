@@ -2,6 +2,7 @@
   <Layout>
     <Carousel />
     <Browsecategory />
+    <BrowseTranding />
   </Layout>
 </template>
 
@@ -9,6 +10,7 @@
 import Layout from "@/components/molecules/Layout.vue";
 import Carousel from "./components/molecules/Carousel.vue";
 import Browsecategory from "./components/molecules/Browsecategory.vue";
+import BrowseTranding from "./components/molecules/BrowseTranding.vue";
 
 export default {
   name: "AppView",
@@ -16,6 +18,7 @@ export default {
     Layout,
     Carousel,
     Browsecategory,
+    BrowseTranding,
   },
 };
 </script>
