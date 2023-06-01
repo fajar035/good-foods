@@ -97,7 +97,6 @@ export default {
   width: 100%;
   height: fit-content;
   padding: var(--padding-default);
-  background-color: red;
 }
 
 .browse__title {
