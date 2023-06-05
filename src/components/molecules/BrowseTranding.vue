@@ -141,9 +141,16 @@ export default {
   border: none;
   border-radius: 100px;
   cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
 .browse__wrapper__btn bottom:focus {
   outline: none;
+}
+
+.browse__wrapper__btn button:hover {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--solor-secondary);
 }
 </style>

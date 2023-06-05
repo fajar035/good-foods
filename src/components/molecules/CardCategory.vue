@@ -180,6 +180,22 @@ export default {
   font-size: 16px;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  color: var(--color-secondary);
+}
+.btn:nth-child(1):hover span {
+  transform: translateX(-5px);
+  transition: all 0.3s ease-out;
+}
+
+.btn:nth-child(2):hover span {
+  transform: translateX(5px);
+  transition: all 0.3s ease-out;
 }
 
 .btn:nth-child(2) {
