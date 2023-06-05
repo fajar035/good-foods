@@ -85,15 +85,13 @@ export default {
 
     moveLeft() {
       this.innerStyles = {
-        transform: `translateX(-${this.step})
-                    translateX(-${this.step})`,
+        transform: `translateX(-${this.step})`,
       };
     },
 
     moveRight() {
       this.innerStyles = {
-        transform: `translateX(${this.step})
-                    translateX(-${this.step})`,
+        transform: `translateX(${this.step})`,
       };
     },
 
@@ -108,7 +106,7 @@ export default {
     resetTranslate() {
       this.innerStyles = {
         transition: "none",
-        transform: `translateX(-${this.step})`,
+        // transform: `translateX(-${this.step})`,
       };
     },
   },
@@ -125,7 +123,7 @@ export default {
 .inner {
   transition: transform 0.2s;
   white-space: nowrap;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .card {
