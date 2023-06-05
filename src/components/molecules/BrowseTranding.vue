@@ -1,7 +1,7 @@
 <template>
   <div class="browse">
     <h1 class="browse__title">
-      Browser Our Category <br />
+      Browser Our Trending <br />
       <span>Receipt</span>
     </h1>
     <div class="browse__card">

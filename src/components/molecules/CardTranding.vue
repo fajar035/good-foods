@@ -29,14 +29,14 @@ export default {
   width: 250px;
   height: 306px;
   background-color: blue;
-  /* margin: 20px 0; */
+  margin: 0;
   display: block;
   padding: 40px 20px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
   background: linear-gradient(
       0deg,
       rgb(255, 255, 255, 0.9),
@@ -45,6 +45,7 @@ export default {
     url(@/assets/images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .card__img {
@@ -71,5 +72,12 @@ export default {
   display: flex;
   align-items: center;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    width: 100%;
+    height: 306px;
+  }
 }
 </style>

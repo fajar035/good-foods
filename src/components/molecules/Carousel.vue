@@ -214,6 +214,12 @@ export default {
     margin-bottom: 50px;
   }
 
+  .carousel__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .carousel__card__detail p {
     margin: 0;
   }
